@@ -39,24 +39,7 @@ public class Main {
 
         newNum = NumConvertBase( originalNum, originalBase, newBase);
         System.out.println(newNum);
-        /*Scanner op = new Scanner(System.in);
-
-        System.out.println("is this what you want?");
-        System.out.println(" 1 for yes or  2 for no");
-
-        int yes = op.nextInt();
-        
-        switch(yes)
-        {
-            case(1):
-                System.out.println("voila!");
-            	//System.out.println(newNum);
-                break;
-            case(2):
-                System.out.println("you chose no, back to the beginning!");
-            	System.exit(1);
-                break;
-        }*/
+       
         }
         private static void ValidateBase(int base)
         {
@@ -78,10 +61,7 @@ public class Main {
         		} else if (Character.isLetter(chDigit) && (chDigit - 'A') + 10 >= base) {
             			System.out.println("cannot have digit " +chDigit + " in base " + base);
             			System.exit(1);
-        		} //else if(!Character.isDigit(chDigit) &&
-        			//	!Character.isLetter(chDigit)); {
-        			//System.out.println("Invalid digit character " + chDigit);
-        			//System.exit(1);}
+        		}
         		}
        }   
         private static String NumConvertBase( String originalNum, int originalBase, int newBase)
@@ -131,4 +111,3 @@ public class Main {
         			}
 }
 
-        //operation = op.next();}
