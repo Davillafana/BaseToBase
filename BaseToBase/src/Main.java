@@ -8,6 +8,7 @@ public class Main {
 
             System.out.println("================================");
             System.out.println("========= Base converter =======");
+            System.out.println("====== works for bases 2-36 ====");
             System.out.println("================================");
 
 
@@ -110,6 +111,7 @@ public class Main {
         			
         			for(int p = D-1; p >= 0; p--)
         			{
+        				
         				pwr = Math.pow(newBase, p);
         				decDigit = Math.floor(val / pwr);
         				val -= decDigit*pwr;
